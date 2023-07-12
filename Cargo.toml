@@ -19,10 +19,18 @@ path = "src/routeguide/server.rs"
 name = "routeguide-client"
 path = "src/routeguide/client.rs"
 
+[[bin]]
+name = "streaming-server"
+path = "src/streaming/server.rs"
+[[bin]]
+name = "streaming-client"
+path = "src/streaming/client.rs"
+
 [dependencies]
 async-stream = "0.3.5"
 futures-core = "0.3.28"
 futures-util = "0.3.28"
+h2 = "0.3.20"
 prost = "0.11.9"
 rand = "0.8.5"
 serde = { version = "1.0.164", features = ["derive"] }
